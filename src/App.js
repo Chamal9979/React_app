@@ -1,15 +1,14 @@
 
-import Navigation from "./Component/Navigation/Navigation";
+
+import ParentDemo from "./Component/Demo/ParentDemo";
 import Content from "./Component/Content/Content";
-import Footer from "./Component/Footer/Footer";
 
 function App(){
     return(
       <div>
-        <Navigation/>
-        
-        <Footer/>
-        
+
+          <Content/>
+
       </div>
     )
 }

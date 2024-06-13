@@ -1,23 +1,26 @@
 import {useState} from "react";
 
 function Footer(){
-    let[value , setvalue]= useState(0)
+    //i want to add + button , value and - button
+    let[value,setValue]=useState(0);
 
-    function decrementValue() {
-       setvalue(value <= 0 ? 0 : --value)
+    function sub(){
+        setValue(value<=0?0:--value)
+
     }
-    function incrementValue() {
-       setvalue(++value)
+    function add(){
+        setValue(++value)
     }
 
     return(
-        <div style={{padding: '5rem', margin: '5rem', display: 'flex'}} className="text-9xl">
-            <button style={{marginRight:'5rem'}} onClick={decrementValue}>-</button>
+        <div style={{padding:"5rem",margin:"5rem",display:"flex"}} className="text-6xl">
+            <button style={{marginRight:"5rem"}} onClick={add}>+</button>
             <h1>{value}</h1>
-            <button style={{marginLeft:'5rem'}} onClick={incrementValue}>+</button>
+            <button style={{marginLeft:"5rem"}} onClick={sub}>-</button>
         </div>
+
     )
 }
-//efhuwhfiwhef
+
 
 export default Footer;
