@@ -63,13 +63,13 @@ export default function Content() {
         let user ={
             fname:fname ,lname:lname,email:email,country:country,address:address
         }
-       // console.log(user)
-       // setUserInput({
-       //     fname: '', lname: '', email: '', country: '', address: ''
-        //});
+
         setDisplayChild(true)
 
-
+        //console.log(user)
+        //setUserInput({
+         //   fname: '', lname: '', email: '', country: '', address: ''
+        // });
     }
 
     function oncancel() {

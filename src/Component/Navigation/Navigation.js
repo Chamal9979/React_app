@@ -21,11 +21,15 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { GrLogin } from 'react-icons/gr';
+import { LuShirt } from "react-icons/lu";
+import { PiBaseballCapBold } from "react-icons/pi";
+import { LiaRingSolid } from "react-icons/lia";
 
 const products = [
-  { name: 'T Shirt', href: '#', icon: ChartPieIcon },
-  { name: 'Caps',  href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Wrist-bands', href: '#', icon: FingerPrintIcon },
+  { name: 'T Shirt', href: '#', icon: LuShirt },
+  { name: 'Caps',  href: '#', icon: PiBaseballCapBold},
+  { name: 'Wrist-bands', href: '#', icon: LiaRingSolid },
   { name: 'New Arivsals',  href: '#', icon: SquaresPlusIcon },
 ]
 
@@ -116,8 +120,10 @@ export default function Navigation() {
           </a>  
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true"></span>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 flex items-center">
+            Log in
+            <span aria-hidden="true"></span>
+            <GrLogin className="ml-2 h-5 w-5" aria-hidden="true" />
           </a>
         </div>
       </nav>
@@ -195,7 +201,7 @@ export default function Navigation() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Log in<GrLogin className="ml-2 h-5 w-5" aria-hidden="true" />
                 </a>
               </div>
             </div>
